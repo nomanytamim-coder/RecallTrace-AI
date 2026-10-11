@@ -1,0 +1,14 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "vite",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "rewrites": [
+    { "source": "/api/outbreaks", "destination": "/api/outbreaks" },
+    { "source": "/api/analyze-outbreak", "destination": "/api/analyze-outbreak" },
+    { "source": "/api/ask-gemini", "destination": "/api/ask-gemini" },
+    { "source": "/api/gemini-status", "destination": "/api/gemini-status" },
+    { "source": "/api/generate-recall-report", "destination": "/api/generate-recall-report" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
